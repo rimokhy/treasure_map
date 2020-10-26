@@ -89,7 +89,7 @@ $> mvn clean install
 ```
 The executable jar will be found under `dist/treasure-map-0.1.0.jar`.
 
-##### Runs the program
+##### Runs the program with default configuration
 ```shell script
 $> java -jar dist/treasure-map-0.1.0.jar
 ```
@@ -98,7 +98,7 @@ $> java -jar dist/treasure-map-0.1.0.jar
 | :------------: | :-------------: | :-------------: |
 |   -f [file]    |     Configuration file     |        [src/main/resources/treasure_map.txt](./src/main/resources/treasure_map.txt) |
 |   -o [file]   |     Output file     |       ./out.txt |
-Example: 
+##### Runs the program with options
 ```shell script
 $> java -jar dist/treasure-map-0.1.0.jar -f ./my_configuration_file.txt -o ./output.txt
 ```

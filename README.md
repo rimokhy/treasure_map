@@ -15,7 +15,7 @@ Adventurers will move according to their sequence of movements, executing one ac
 If an adventurer steps on a treasure tile, they will pickup one of it. If they want more, they have to move back, then move forward again.
 An adventurer cannot move through a mountain. When a mountain is met, the adventurer will consume his movement, but the adventurer will not move.
 
-Example input file:
+###### Example input file:
 ```
 C​ - 3 - 4
 M​ - 1 - 0
@@ -24,45 +24,43 @@ T​ - 0 - 3 - 2
 T​ - 1 - 3 - 3
 A​ - Lara - 1 - 1 - S - AADADAGGA
 ```
-A game requires at least 1 [map](#Map configuration), 1 [treasure](#Treasure configuration), and 1 [adventurer](#Adventurer configuration) to start.
+A game requires at least 1 [map](#map-configuration), 1 [treasure](#treasure-configuration), and 1 [adventurer](#adventurer-configuration) to start.
 
-##### Game configuration 
+#### Game configuration 
 Currently implemented entities:
-* [Map](#Map configuration)
-* [Mountain](#Mountain configuration)
-* [Treasure](#Treasure configuration)
-* [Adventurer](#Adventurer configuration)
+* [Map](#map-configuration)
+* [Mountain](#mountain-configuration)
+* [Treasure](#treasure-configuration)
+* [Adventurer](#adventurer-configuration)
 
-##### Map configuration
-Generates a map of size {Horizontal axis}, {Vertical axis}
+#### Map configuration
+Generates a map of size **Horizontal axis**, **Vertical axis**.
 ```
 # C - {Horizontal axis} - {Vertical Axis}
 C​ - 3 - 4
 ```
-##### Mountain configuration
-Put a mountain on the map at position {Horizontal axis}, {Vertical axis}
+#### Mountain configuration
+Put a mountain on the map at position **Horizontal axis**, **Vertical axis**.
 ```
 # M - {Horizontal axis} - {Vertical Axis}
 M - 1 - 0
 M​ - 2 - 1
 ```
-##### Treasure configuration
-Put a treasure on the map at position {Horizontal axis}, {Vertical axis} harboring {Number of treasures} treasures.
+#### Treasure configuration
+Put a treasure on the map at position **Horizontal axis**, **Vertical axis** harboring **Number of treasures** treasures.
 ```
 # T - {Horizontal axis} - {Vertical Axis} - {Number of treasure}
 T​ - 0 - 3 - 2
 T​ - 1 - 3 - 3
 ```
-##### Adventurer configuration
-Put an adventurer named {Adventurer name} on the map at position {Horizontal axis}, {Vertical axis}, facing {Orientation}.
-The adventurer will move according to its {Sequence of movements}.
+#### Adventurer configuration
+Put an adventurer named **Adventurer name** on the map at position **Horizontal axis**, **Vertical axis**, facing **Orientation**.
+The adventurer will move according to its **Sequence of movements**.
 ```
 # A - {Adventurer name} - {Horizontal axis} - {Vertical Axis} - {Orientation} - {Sequence of movements}
 A​ - Lara - 1 - 1 - S - AADADAGGA
 ```
-###### Sequence of movements
-Adventurers responds to sequence of movements.\
-**Movements**:\
+##### Sequence of movements
 A - Move one tile in the direction of player orientation\
 G - Rotate player left\
 G - Rotate player right
@@ -71,7 +69,7 @@ G - Rotate player right
 ##### End of game
 The game is over when all the adventurers have completed their sequence of movements.
 At the end of the game, the program will output a file containing the number of remaining treasures, and the number of treasures in the adventurer's bag.
-###### Exemple output file from [input file](#Example input file):
+###### Example output file from [input file](#example-input-file):
 ```
 C - 3 - 4
 M - 1 - 0

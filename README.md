@@ -87,7 +87,9 @@ A - Lara - 0 - 3 - South - 3
 ```shell script
 $> mvn clean install
 ```
-The executable jar will be found under `dist/treasure-map-0.1.0.jar`.
+This will install the release (currently 0.1.0) jar under directory `dist/`
+
+##### Or download the [latest release](https://github.com/rimokhy/treasure_map/releases/download/0.1.0/treasure-map-0.1.0.jar)
 
 ##### Runs the program with default configuration
 ```shell script

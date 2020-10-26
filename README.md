@@ -97,7 +97,7 @@ $> java -jar dist/treasure-map-0.1.0.jar
 |   Option    |     Effect     |   Default value    |
 | :------------: | :-------------: | :-------------: |
 |   -f [file]    |     Configuration file     |        [src/main/resources/treasure_map.txt](./src/main/resources/treasure_map.txt) |
-|   -o [file]   |     Output file     |        [out.txt](./out.txt) |
+|   -o [file]   |     Output file     |       ./out.txt |
 Example: 
 ```shell script
 $> java -jar dist/treasure-map-0.1.0.jar -f ./my_configuration_file.txt -o ./output.txt
